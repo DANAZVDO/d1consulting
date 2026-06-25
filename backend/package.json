@@ -1,0 +1,23 @@
+{
+  "name": "d1-growth-suite-backend",
+  "version": "0.1.0",
+  "description": "D1 Growth Suite - Backend API",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test tests/",
+    "db:init": "node src/utils/db-init.js",
+    "db:seed": "node src/utils/db-seed.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {}
+}
